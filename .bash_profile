@@ -8,6 +8,8 @@ function convert_text_windows_style {
     nkf --overwrite --oc=UTF-8-BOM -Lw $1
 }
 
+export WINEPREFIX=/home/$USER/.wine
+
 #
 function switch_wine_path {
     export HOME=/home/$USER/.wine/drive_c/users/$USER
